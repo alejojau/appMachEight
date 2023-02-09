@@ -35,8 +35,9 @@ encouraged to reach out with any questions that you come across.
 
 
 ## HOW TO RUN THE CODE
+###JAVA
 ​
-First you need to have Java 1.8 or above installed on your computer and make sure you can call java commands in your command line.
+First you need to have Java 1.8 or above installed on your computer and make sure you can call java commands in your command line. Make sure the compiler and the running version of java is the same, or the compiler version is lower than the running version.
 
 Then download the code from this repository, and then open a command line where the app.java file is located. After this, run the following command:.
 
@@ -49,3 +50,8 @@ So the short program is compiled, and to run it we run the next command:
 ```
 java app
 ```
+
+And it will ask to write the list of numbers (separeted by commas) taken into account to reach the number receive as the second parameter.
+
+###Python
+The commands in the colaborative notebook (Python) is just to push play in the first part of the code to set the function and then play the second part of the code.
