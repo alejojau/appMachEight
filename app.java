@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.HashMap;
 
 public class app {
 
@@ -29,13 +30,18 @@ public class app {
 	
 	private static ArrayList<String> app(ArrayList<Integer> list,int number){
 		ArrayList<String> answ= new ArrayList<>();
+		HashMap<String, Integer> numbers = new HashMap<String, Integer>();
+
 		for(int i = 0; i<list.size(); i++){
-			for(int j = i+1; j<list.size(); j++){
-				if(list.get(i) + list.get(j) == number){
-					String textAns = list.get(i)+","+list.get(j);
-					answ.add(textAns);
-					System.out.println(textAns);
-				}
+			numbers.put(list.get(i)+"",number-list.get(i));
+		}
+		for(String i : numbers.keySet()){
+			int valueKey = numbers.get(i);
+			Integer complementValue = numbers.get(valueKey+"");
+			if(complementValue!=null){
+				String textAns = valueKey+","+complementValue;
+				answ.add(textAns);
+				System.out.println(textAns);
 			}
 		}
 		return answ;
